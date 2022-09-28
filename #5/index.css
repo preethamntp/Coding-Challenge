@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=VT323&display=swap");
+
+:root {
+  --primary: #00b29d;
+}
+
+body {
+  background: #333;
+  font-family: "Poppins";
+  display: block;
+  width: auto;
+  height: 50%;
+}
+
+main {
+  margin-left: 0;
+  padding: 140px 140px 40px;
+  color: #bbb;
+  transition: all ease-in 0.3s;
+}
+
+.burger {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #eee;
+  margin-bottom: 5px;
+  transition: all ease-in 0.5s;
+  transform: translateX(10px);
+}
+
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+
+.burger.open span:nth-child(2) {
+  transition: all ease-out 0.5s;
+  transform: translateX(-20px);
+  opacity: 0;
+  width: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+}
