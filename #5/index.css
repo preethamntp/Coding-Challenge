@@ -20,8 +20,13 @@ main {
 }
 
 .burger {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   font-size: 1.2em;
   cursor: pointer;
+  width: 40px;
+  padding: 10px;
 }
 
 .burger span {
